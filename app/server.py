@@ -9,10 +9,37 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/open?id=1ThGp9A4kdkWknAorcttHvCEBm85Ne-Oq'
+export_file_name = 'inception_transfer2.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['Banana Lady Finger', 'Melon Piel de Sapo', 'Strawberry',
+       'Physalis with Husk', 'Apple Braeburn', 'Carambula',
+       'Pineapple Mini', 'Onion Red Peeled', 'Potato Sweet', 'Beetroot',
+       'Apple Red Yellow 2', 'Tomato 1', 'Pear Forelle', 'Chestnut',
+       'Cocos', 'Apple Golden 3', 'Rambutan', 'Cherry Wax Red',
+       'Grape Pink', 'Grape White 4', 'Tomato 2', 'Cantaloupe 1',
+       'Onion Red', 'Cherry 1', 'Apple Granny Smith', 'Cactus fruit',
+       'Raspberry', 'Kumquats', 'Passion Fruit', 'Grape White 2',
+       'Pitahaya Red', 'Avocado', 'Peach Flat', 'Lemon', 'Blueberry',
+       'Nectarine Flat', 'Apple Red Yellow 1', 'Walnut', 'Potato White',
+       'Banana', 'Plum 2', 'Pepper Yellow', 'Pear Red', 'Mandarine',
+       'Pear Williams', 'Cherry 2', 'Nut Pecan', 'Guava', 'Salak',
+       'Physalis', 'Hazelnut', 'Lemon Meyer', 'Apple Golden 2', 'Plum 3',
+       'Kohlrabi', 'Grapefruit Pink', 'Quince', 'Papaya', 'Huckleberry',
+       'Peach', 'Cantaloupe 2', 'Pear Monster', 'Pear Kaiser', 'Pear',
+       'Banana Red', 'Plum', 'Tomato Cherry Red', 'Pepper Green',
+       'Nectarine', 'Clementine', 'Peach 2', 'Potato Red', 'Kaki',
+       'Limes', 'Strawberry Wedge', 'Pomegranate', 'Nut Forest',
+       'Apple Red 1', 'Grape White', 'Pineapple', 'Pepino',
+       'Cherry Rainier', 'Pomelo Sweetie', 'Dates', 'Tomato 3','Mango Red', 'Onion White', 'Granadilla', 'Cauliflower',
+       'Redcurrant', 'Pear Abate', 'Grape White 3', 'Apple Crimson Snow',
+       'Orange', 'Mulberry', 'Apple Golden 1', 'Tomato Maroon',
+       'Apple Red 3', 'Kiwi', 'Tangelo', 'Avocado ripe',
+       'Apple Red Delicious', 'Eggplant', 'Apple Pink Lady', 'Mango',
+       'Cherry Wax Yellow', 'Grapefruit White', 'Grape Blue', 'Mangostan',
+       'Tomato Yellow', 'Tamarillo', 'Cherry Wax Black', 'Lychee',
+       'Apricot', 'Pepper Red', 'Tomato 4', 'Apple Red 2',
+       'Potato Red Washed', 'Maracuja', 'Ginger Root']
 path = Path(__file__).parent
 
 app = Starlette()
